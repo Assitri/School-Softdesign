@@ -58,19 +58,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Blue"
-            android:id="@+id/button_blue" />
+            android:id="@+id/button_blue"
+            android:onClick="onClick"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Green"
-            android:id="@+id/button_green" />
+            android:id="@+id/button_green"
+            android:onClick="onClick"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Red"
-            android:id="@+id/button_red" />
+            android:id="@+id/button_red"
+            android:onClick="onClick"/>
     </LinearLayout>
 
 
