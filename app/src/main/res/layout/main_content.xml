@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="?android:actionBarSize">
+    android:paddingTop="?android:actionBarSize"
+    android:background="#f9afef">
 
     <LinearLayout
         android:id="@+id/linear_container"
@@ -46,7 +47,8 @@
         android:text="Blue"
         android:id="@+id/button_blue"
         android:layout_below="@id/linear_container"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -54,7 +56,8 @@
         android:text="Green"
         android:id="@+id/button_green"
         android:layout_below="@+id/linear_container"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:onClick="onClick"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -62,6 +65,7 @@
         android:text="Red"
         android:id="@+id/button_red"
         android:layout_below="@+id/linear_container"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        android:onClick="onClick"/>
 
 </RelativeLayout>
