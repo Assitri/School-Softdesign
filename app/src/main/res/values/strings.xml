@@ -11,8 +11,22 @@
     <string name="drawer.tasks">Задачи</string>
     <string name="drawer.team">Команда</string>
     <string name="drawer.setting">Настройки</string>
-    <string name="fragment.profile.description">Тут будет Личная информация</string>
     <string name="fragment.profile.title">Мой профиль</string>
+
+    <string name="fragment.profile.description">Тут будет личная информация</string>
     <string name="fragment.contacts.description">Тут будут контакты</string>
-    <string name="fragment.contacts.title">Мои контакты</string>
+    <string name="fragment.setting.description">Тут будут настройки</string>
+    <string name="fragment.tasks.description">Тут будут задачи</string>
+    <string name="fragment.team.description">Тут будет команда</string>
+
+    <string name="header.name">Куренкова Екатерина Юриевна</string>
+        <string name="header.email">airiona77@yandex.ru</string>
+        <string name="header.rating">5</string>
+
+        <string name="roboto.regular">sans-serif</string>
+        <string name="roboto.light">sans-serif-light</string>
+        <string name="roboto.condensed">sans-serif-condensed</string>
+        <string name="roboto.thin">sans-serif-thin</string>
+        <string name="roboto.medium">sans-serif-medium</string>
+
 </resources>

@@ -10,12 +10,12 @@ import android.view.ViewGroup;
 
 import com.softdesign.school.R;
 
-public class ProfileFragment extends Fragment {
+public class TasksFragment extends Fragment {
     @Nullable
     @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-                View convertView = inflater.inflate(R.layout.fragment_profile, null, false);
-                getActivity().setTitle(getResources().getString(R.string.drawer_profile));
+                View convertView = inflater.inflate(R.layout.fragment_tasks, null, false);
+                getActivity().setTitle(getResources().getString(R.string.drawer_tasks));
                 return convertView;
             }
 
@@ -23,6 +23,7 @@ public class ProfileFragment extends Fragment {
         public void onActivityCreated(@Nullable Bundle savedInstanceState) {
                 super.onActivityCreated(savedInstanceState);
                 NavigationView mNavigationView = (NavigationView) getActivity().findViewById(R.id.navigation_view);
-                mNavigationView.getMenu().findItem(R.id.drawer_profile).setChecked(true);
+                mNavigationView.getMenu().findItem(R.id.drawer_tasks).setChecked(true);
             }
-    }
+
+}
