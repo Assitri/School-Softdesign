@@ -17,8 +17,7 @@
 
             <ImageView
                 style="@style/profile_image_view"
-                android:src="@drawable/profile_mobile_icon"
-                android:background="#adfcf3" />
+                android:src="@drawable/profile_mobile_icon" />
 
             <LinearLayout style="@style/profile_linear_layout">
 
@@ -47,8 +46,7 @@
 
             <ImageView
                 style="@style/profile_image_view"
-                android:src="@drawable/profile_email_icon"
-                android:background="#fd6e6e" />
+                android:src="@drawable/profile_email_icon" />
 
             <LinearLayout style="@style/profile_linear_layout">
 
@@ -77,8 +75,7 @@
 
             <ImageView
                 style="@style/profile_image_view"
-                android:src="@drawable/profile_vk_icon"
-                android:background="#f2f98e" />
+                android:src="@drawable/profile_vk_icon" />
 
             <LinearLayout style="@style/profile_linear_layout">
 
@@ -107,8 +104,7 @@
 
             <ImageView
                 style="@style/profile_image_view"
-                android:src="@drawable/profile_git_icon"
-                android:background="#76bcfa" />
+                android:src="@drawable/profile_git_icon" />
 
             <LinearLayout style="@style/profile_linear_layout">
 
@@ -137,8 +133,7 @@
 
             <ImageView
                 style="@style/profile_image_view"
-                android:src="@drawable/profile_about_icon"
-                android:background="#fb93f3" />
+                android:src="@drawable/profile_about_icon" />
 
             <LinearLayout style="@style/profile_linear_layout">
 

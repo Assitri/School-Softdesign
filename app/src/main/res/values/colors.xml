@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ba55d3</color>
-    <color name="colorPrimaryDark">#000080</color>
-    <color name="colorAccent">#C71585</color>
+    <color name="colorPrimary">#4169E1</color>
+    <color name="colorPrimaryDark">#4B0082</color>
+    <color name="colorAccent">#778899</color>
     <color name="title_color">#FFFFFF</color>
-    <color name="item_purple">#ffe4e1</color>
+    <color name="item_purple">#DCDCDC</color>
     <color name="item_white">#FFFFFF</color>
-    <color name="color_black">#000000</color>
+    <color name="color_black">#191970</color>
     <color name="PaleVioletRed">#DB7093</color>
-    <color name="Indigo">#4B0082</color>
+    <color name="Indigo">#F0F8FF</color>
 
 
 </resources>
