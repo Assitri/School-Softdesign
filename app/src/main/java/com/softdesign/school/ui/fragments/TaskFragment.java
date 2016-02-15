@@ -17,12 +17,13 @@ import com.softdesign.school.R;
 import com.softdesign.school.utils.BlockToolbar;
 
 
-public class ProfileFragment extends Fragment {
+public class TaskFragment extends Fragment{
+
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View convertView = inflater.inflate(R.layout.fragment_profile,null,false);
+        View convertView = inflater.inflate(R.layout.fragment_task,null,false);
         return convertView;
     }
 
@@ -37,18 +38,18 @@ public class ProfileFragment extends Fragment {
         CoordinatorLayout.LayoutParams params = (CoordinatorLayout.LayoutParams) actionButton.getLayoutParams();
         CollapsingToolbarLayout collapseToolbar = (CollapsingToolbarLayout) getActivity().findViewById(R.id.collapse_toolbar);
 
-        navigationView.getMenu().findItem(R.id.drawer_profile).setChecked(true);
 
-        collapseToolbar.setTitle(getResources().getString(R.string.header_family));
+        navigationView.getMenu().findItem(R.id.drawer_tasks).setChecked(true);
 
-        /* кнопка с иконкой в Профиле
-         */
 
-        params.setAnchorId(R.id.appbar_layout);
+        collapseToolbar.setTitle(getResources().getString(R.string.drawer_tasks));
+
+        params.setAnchorId(R.id.fragmentContainer);
         params.anchorGravity= Gravity.RIGHT|Gravity.BOTTOM;
-        actionButton.setImageResource(R.drawable.fab_edit);
+        actionButton.setImageResource(R.drawable.fab_add);
 
-        appBar.setExpanded(true);
-        BlockToolbar.setDrag(true, appBar);
+
+        appBar.setExpanded(false,false);
+        BlockToolbar.setDrag(false, appBar);
     }
 }
