@@ -2,8 +2,11 @@ package com.softdesign.school.ui.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> ДЗ_4
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
@@ -11,13 +14,19 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.view.Gravity;
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.softdesign.school.R;
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
 import com.softdesign.school.utils.BlockToolbar;
 
 
@@ -55,5 +64,8 @@ public class TeamFragment extends Fragment{
         appBar.setExpanded(false,false);
         BlockToolbar.setDrag(false, appBar);
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
 }

@@ -1,6 +1,9 @@
 package com.softdesign.school.ui.activities;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -11,7 +14,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
 import com.softdesign.school.R;
 import com.softdesign.school.ui.fragments.ContactsFragment;
 import com.softdesign.school.ui.fragments.ProfileFragment;
@@ -52,11 +58,19 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mNavigationView = (NavigationView) findViewById(R.id.navigation_view);
         setupDrawer();
+<<<<<<< HEAD
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
 
     }
 
+=======
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
+
+    }
+
+>>>>>>> ДЗ_4
     /*
       Mетод setupToolBar -  yстанавливает Toolbar и иконку для кнопки Home.
      */
@@ -114,6 +128,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+<<<<<<< HEAD
 
 }
 
+=======
+
+}
+>>>>>>> ДЗ_4

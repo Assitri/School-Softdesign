@@ -11,6 +11,10 @@
 
     <android.support.design.widget.CoordinatorLayout
 
+<<<<<<< HEAD
+=======
+    <android.support.design.widget.CoordinatorLayout
+>>>>>>> ДЗ_4
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true">
@@ -19,12 +23,19 @@
             android:id="@+id/appbar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
 
             android:fitsSystemWindows="true">
 
             <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/collapse_toolbar"
 
+=======
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapse_toolbar"
+>>>>>>> ДЗ_4
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:contentScrim="@color/colorPrimary"
@@ -80,13 +91,21 @@
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+<<<<<<< HEAD
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/float_action_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/activity_horizontal_margin"/>
+=======
+>>>>>>> ДЗ_4
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/float_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
 
 
     <android.support.design.widget.NavigationView
@@ -98,4 +117,7 @@
         app:menu="@menu/drawer_menu"/>
 
 </android.support.v4.widget.DrawerLayout>
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
