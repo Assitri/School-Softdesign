@@ -4,6 +4,13 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="view_padding">8dp</dimen>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> ДЗ_4
+>>>>>>> master
     <dimen name="nav_header_height">160dp</dimen>
     <dimen name="nav_header_height_v21">185dp</dimen>
     <dimen name="nav_padding_top_v21">185dp</dimen>
@@ -15,9 +22,22 @@
     <dimen name="item_height">72dp</dimen>
     <dimen name="item_avatar_size">40dp</dimen>
     <dimen name="item_text_margin">56dp</dimen>
+<<<<<<< HEAD
 
     <dimen name="profile_icon_size">24dp</dimen>
     <dimen name="profile_text_margin">56dp</dimen>
+=======
+<<<<<<< HEAD
+
+    <dimen name="profile_icon_size">24dp</dimen>
+    <dimen name="profile_text_margin">56dp</dimen>
+
+=======
+
+    <dimen name="profile_icon_size">24dp</dimen>
+    <dimen name="profile_text_margin">56dp</dimen>
+>>>>>>> ДЗ_4
+>>>>>>> master
 
     <dimen name="toolbar_rate_size">48dp</dimen>
 

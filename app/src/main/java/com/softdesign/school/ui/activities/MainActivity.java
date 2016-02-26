@@ -1,5 +1,12 @@
 package com.softdesign.school.ui.activities;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> ДЗ_4
+>>>>>>> master
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -10,6 +17,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> ДЗ_4
+>>>>>>> master
 import com.softdesign.school.R;
 import com.softdesign.school.ui.fragments.ContactsFragment;
 import com.softdesign.school.ui.fragments.ProfileFragment;
@@ -50,11 +64,86 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mNavigationView = (NavigationView) findViewById(R.id.navigation_view);
         setupDrawer();
+<<<<<<< HEAD
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
 
     }
 
+    /*
+      Mетод setupToolBar -  yстанавливает Toolbar и иконку для кнопки Home.
+     */
+    private void setupToolbar() {
+        setSupportActionBar(mToolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeAsUpIndicator(R.drawable.toolbar_menu_icon);
+    }
+=======
+<<<<<<< HEAD
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
+>>>>>>> master
+
+    /*
+     метод setupDrawer - чтобы меню было кликабельным и по клику на item переходило на нужный фрагмент. сравнивает id
+     пункта меню с id фрагментов, если все ок создает новый объект по ссылке mFragment и показывает нужный нам файл фрагмента.
+     */
+
+    private void setupDrawer() {
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.drawer_profile:
+                        mFragment = new ProfileFragment();
+                        break;
+                    case R.id.drawer_contacts:
+                        mFragment = new ContactsFragment();
+                        break;
+                    case R.id.drawer_team:
+                        mFragment = new TeamFragment();
+                        break;
+                    case R.id.drawer_tasks:
+                        mFragment = new TaskFragment();
+                        break;
+                    case R.id.drawer_settings:
+                        mFragment = new SettingsFragment();
+                        break;
+                }
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, mFragment).addToBackStack(null).commit();
+                mDrawerLayout.closeDrawers();
+                return false;
+            }
+        });
+    }
+
+<<<<<<< HEAD
+    /*
+      метод onOptionsItemSelected - для обработки нажатий пунктов меню и  запуска layout.
+
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            mDrawerLayout.openDrawer(GravityCompat.START);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+=======
+=======
+>>>>>>> master
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
+
+<<<<<<< HEAD
+
+}
+=======
+    }
+
+>>>>>>> ДЗ_4
     /*
       Mетод setupToolBar -  yстанавливает Toolbar и иконку для кнопки Home.
      */
@@ -112,5 +201,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+<<<<<<< HEAD
 
 }
+
+=======
+
+}
+>>>>>>> ДЗ_4
+>>>>>>> master
