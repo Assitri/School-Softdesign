@@ -1,32 +1,41 @@
 <resources>
     <string name="app_name">School</string>
-    <string name="title_activity_main2">Main2Activity</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
-    <string name="action_settings">Settings</string>
+    <!-- Меню NavigationDrawer -->
     <string name="drawer.profile">Профиль</string>
     <string name="drawer.contacts">Контакты</string>
-    <string name="drawer.tasks">Задачи</string>
     <string name="drawer.team">Команда</string>
-    <string name="drawer.setting">Настройки</string>
-    <string name="fragment.profile.title">Мой профиль</string>
 
-    <string name="fragment.profile.description">Тут будет личная информация</string>
-    <string name="fragment.contacts.description">Тут будут контакты</string>
-    <string name="fragment.setting.description">Тут будут настройки</string>
-    <string name="fragment.tasks.description">Тут будут задачи</string>
-    <string name="fragment.team.description">Тут будет команда</string>
+    <string name="drawer.tasks">Задачи</string>
+    <string name="drawer.settings">Настройки</string>
 
-    <string name="header.name">Куренкова Екатерина Юриевна</string>
-        <string name="header.email">airiona77@yandex.ru</string>
-        <string name="header.rating">5</string>
+    <!-- NavigationHeader -->
+    <string name="header.family">Керенкова Екатерина</string>
+    <string name="header.rate">666</string>
+    <string name="header.email">airiona77@yandex.ru</string>
 
-        <string name="roboto.regular">sans-serif</string>
-        <string name="roboto.light">sans-serif-light</string>
-        <string name="roboto.condensed">sans-serif-condensed</string>
-        <string name="roboto.thin">sans-serif-thin</string>
-        <string name="roboto.medium">sans-serif-medium</string>
+    <!-- ProfileFragment -->
+    <string name="profile.number.mobile">89879711426</string>
+    <string name="profile.number.description">Мобильный</string>
+    <string name="profile.email.email">airiona77@yandex.ru</string>
+    <string name="profile.email.description">E-mail</string>
+    <string name="profile.vk.link">vk.com/emrisss</string>
+    <string name="profile.vk.description">VK</string>
+    <string name="profile.git.link">github.com/Assitri/school-softdesign</string>
+    <string name="profile.git.description">GitHub</string>
+    <string name="profile.about.text"> пишите поболтаем))</string>
+    <string name="profile.about.description">О себе</string>
+
+    <!--Other Fragments -->
+    <string name="fragment.settings.description">Здесь будут настройки</string>
+    <string name="fragment.task.description">Здесь будут  задания</string>
+    <string name="fragment.team.description">Здесь будут контакты</string>
+
+
+    <string name="roboto.regular">sans-serif</string>
+    <string name="roboto.light">sans-serif-light</string>
+    <string name="roboto.condensed">sans-serif-condensed</string>
+    <string name="roboto.thin">sans-serif-thin</string>
+    <string name="roboto.medium">sans-serif-medium</string>
 
 </resources>

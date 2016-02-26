@@ -1,118 +1,78 @@
 package com.softdesign.school.ui.activities;
 
-import android.os.Build;
-import android.support.design.widget.NavigationView;
+
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
-import android.view.View;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.FrameLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
+
+
 import com.softdesign.school.R;
 import com.softdesign.school.ui.fragments.ContactsFragment;
 import com.softdesign.school.ui.fragments.ProfileFragment;
-import com.softdesign.school.ui.fragments.SettingFragment;
-import com.softdesign.school.ui.fragments.TasksFragment;
+import com.softdesign.school.ui.fragments.SettingsFragment;
+import com.softdesign.school.ui.fragments.TaskFragment;
 import com.softdesign.school.ui.fragments.TeamFragment;
-import com.softdesign.school.utils.Lg;
-import android.widget.Toast;
-import android.view.WindowManager;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
-    //тут переменные. и чтобы OnClickListener работал внизу делаем пустой метод onClick, иначе выдает ошибку.
-        Toolbar mToolbar;
-        int mIntColor;
-        NavigationView mNavigationView;
-        public DrawerLayout mNavigationDrawer;
-        Fragment mFragment;
-        FrameLayout mFrameLayout;
+    /*
+      переменные
+     */
 
+    private NavigationView mNavigationView;
+    private DrawerLayout mDrawerLayout;
+    private Toolbar mToolbar;
+    private Fragment mFragment;
 
-
+    /*
+    В onCreate метод setContentView подгружает в это Активити
+    ресурс activity_main, для размещения нашего созданного интерфейса.
+    Так же тут идет нахождение тулбара по его id в др файлах, помещение сего в переменную
+    mToolbar и потом уже вызов метода setupToolbar(). Все то же самое с id drawer_layout и
+    navigation_view. Подгружаем файлы фрагментов.
+    */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Lg.e(this.getLocalClassName(), "===");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setupToolbar();
+
+
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setupToolbar();
 
-        mNavigationDrawer =(DrawerLayout) findViewById(R.id.navigation_drawer);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mNavigationView = (NavigationView) findViewById(R.id.navigation_view);
-
         setupDrawer();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.main_frame_container, new ProfileFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
 
     }
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Lg.e(this.getLocalClassName(), "on start");
-    }
 
-   // public void setupToolbar() {
-       //setSupportActionBar(mToolbar);
-       // android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-       // setSupportActionBar(mToolbar);
-        //ActionBar actionBar = getSupportActionBar();
-        //actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_24dp);
-              // actionBar.setDisplayHomeAsUpEnabled(true);
-    //}
+    /*
+      Mетод setupToolBar -  yстанавливает Toolbar и иконку для кнопки Home.
+     */
     private void setupToolbar() {
-                //setSupportActionBar(mToolbar);
-                ActionBar actionBar = getSupportActionBar();
-                if (actionBar != null) {
-                        actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_24dp);
-                        actionBar.setDisplayHomeAsUpEnabled(true);
-                   }
-            }
-
-
-
-
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Lg.e(this.getLocalClassName(), "on resume");
+        setSupportActionBar(mToolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeAsUpIndicator(R.drawable.toolbar_menu_icon);
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Lg.e(this.getLocalClassName(), "on pause");
-    }
+    /*
+     метод setupDrawer - чтобы меню было кликабельным и по клику на item переходило на нужный фрагмент. сравнивает id
+     пункта меню с id фрагментов, если все ок создает новый объект по ссылке mFragment и показывает нужный нам файл фрагмента.
+     */
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Lg.e(this.getLocalClassName(), "on stop");
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Lg.e(this.getLocalClassName(), "on restart");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Lg.e(this.getLocalClassName(), "on destroy");
-    }
-
-
-//метод для драйвера. сравнивает getItemId с id из файла драйвер меню, если все ок выдает файлы фрагментов
-    public void setupDrawer() {
+    private void setupDrawer() {
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
 
             @Override
@@ -123,44 +83,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         break;
                     case R.id.drawer_contacts:
                         mFragment = new ContactsFragment();
-                        ;
-                        break;
-                    case R.id.drawer_setting:
-                        mFragment = new SettingFragment();
-                        break;
-                    case R.id.drawer_tasks:
-                        mFragment = new TasksFragment();
                         break;
                     case R.id.drawer_team:
                         mFragment = new TeamFragment();
                         break;
+                    case R.id.drawer_tasks:
+                        mFragment = new TaskFragment();
+                        break;
+                    case R.id.drawer_settings:
+                        mFragment = new SettingsFragment();
+                        break;
                 }
-                if (mFragment != null) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.main_frame_container, mFragment).addToBackStack(null).commit();
-                }
-                mNavigationDrawer.closeDrawers();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, mFragment).addToBackStack(null).commit();
+                mDrawerLayout.closeDrawers();
                 return false;
             }
         });
     }
 
-//кнопочка Home  -вылазиет боковое меню.
+    /*
+      метод onOptionsItemSelected - для обработки нажатий пунктов меню и  запуска layout.
+
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId()==android.R.id.home) {
-                        Toast.makeText(this,"Menu",Toast.LENGTH_SHORT).show();
-                        mNavigationDrawer.openDrawer(GravityCompat.START);
+        if (item.getItemId() == android.R.id.home) {
+            mDrawerLayout.openDrawer(GravityCompat.START);
         }
         return super.onOptionsItemSelected(item);
     }
-    //кнопочка Назад
-    public void onBackPressed() {
-        super.onBackPressed();
-        mFragment = getSupportFragmentManager().findFragmentById(R.id.main_frame_container);
-    }
 
-    @Override
-    public void onClick(View v) {
 
-    }
+
 }
+
