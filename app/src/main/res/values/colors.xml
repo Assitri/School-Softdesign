@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> ДЗ_4
->>>>>>> master
-=======
-
-=======
->>>>>>> ДЗ_4
->>>>>>> master
     <color name="colorPrimary">#4169E1</color>
     <color name="colorPrimaryDark">#4B0082</color>
     <color name="colorAccent">#778899</color>

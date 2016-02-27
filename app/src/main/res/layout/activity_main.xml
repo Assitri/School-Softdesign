@@ -4,27 +4,9 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.softdesign.school.ui.activities.MainActivity">
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <android.support.design.widget.CoordinatorLayout
-=======
-=======
->>>>>>> master
+    android:fitsSystemWindows="true">
 
     <android.support.design.widget.CoordinatorLayout
-
-<<<<<<< HEAD
-=======
-    <android.support.design.widget.CoordinatorLayout
->>>>>>> ДЗ_4
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true">
@@ -33,35 +15,10 @@
             android:id="@+id/appbar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
->>>>>>> master
-=======
-
->>>>>>> master
             android:fitsSystemWindows="true">
 
             <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/collapse_toolbar"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
-
-=======
-            android:fitsSystemWindows="true">
-
-            <android.support.design.widget.CollapsingToolbarLayout
-                android:id="@+id/collapse_toolbar"
->>>>>>> ДЗ_4
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:contentScrim="@color/colorPrimary"
@@ -117,24 +74,6 @@
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> master
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/float_action_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/activity_horizontal_margin"/>
-=======
->>>>>>> ДЗ_4
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/float_action_button"
@@ -142,6 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/activity_horizontal_margin"/>
 
+    </android.support.design.widget.CoordinatorLayout>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navigation_view"
@@ -152,16 +92,3 @@
         app:menu="@menu/drawer_menu"/>
 
 </android.support.v4.widget.DrawerLayout>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> ДЗ_4
->>>>>>> master
-=======
-
-=======
->>>>>>> ДЗ_4
->>>>>>> master

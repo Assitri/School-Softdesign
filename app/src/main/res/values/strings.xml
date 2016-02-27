@@ -5,19 +5,6 @@
     <string name="drawer.profile">Профиль</string>
     <string name="drawer.contacts">Контакты</string>
     <string name="drawer.team">Команда</string>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> ДЗ_4
->>>>>>> master
-=======
-
-=======
->>>>>>> ДЗ_4
->>>>>>> master
     <string name="drawer.tasks">Задачи</string>
     <string name="drawer.settings">Настройки</string>
 
@@ -49,17 +36,4 @@
     <string name="roboto.condensed">sans-serif-condensed</string>
     <string name="roboto.thin">sans-serif-thin</string>
     <string name="roboto.medium">sans-serif-medium</string>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> ДЗ_4
->>>>>>> master
-=======
-
-=======
->>>>>>> ДЗ_4
->>>>>>> master
 </resources>
