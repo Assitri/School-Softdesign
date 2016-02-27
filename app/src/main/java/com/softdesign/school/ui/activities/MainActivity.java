@@ -1,8 +1,14 @@
 package com.softdesign.school.ui.activities;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+
+=======
+>>>>>>> ДЗ_4
+>>>>>>> master
+=======
 
 =======
 >>>>>>> ДЗ_4
@@ -18,8 +24,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+
+=======
+>>>>>>> ДЗ_4
+>>>>>>> master
+=======
 
 =======
 >>>>>>> ДЗ_4
@@ -68,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
 
+<<<<<<< HEAD
     }
 
     /*
@@ -78,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.toolbar_menu_icon);
+=======
+>>>>>>> master
     }
 =======
 <<<<<<< HEAD
@@ -123,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
     /*
       метод onOptionsItemSelected - для обработки нажатий пунктов меню и  запуска layout.
 
+<<<<<<< HEAD
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -199,14 +215,86 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+=======
+=======
 
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
+
+    }
+
+>>>>>>> ДЗ_4
+    /*
+      Mетод setupToolBar -  yстанавливает Toolbar и иконку для кнопки Home.
+     */
+    private void setupToolbar() {
+        setSupportActionBar(mToolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeAsUpIndicator(R.drawable.toolbar_menu_icon);
+    }
+
+    /*
+     метод setupDrawer - чтобы меню было кликабельным и по клику на item переходило на нужный фрагмент. сравнивает id
+     пункта меню с id фрагментов, если все ок создает новый объект по ссылке mFragment и показывает нужный нам файл фрагмента.
+     */
+
+    private void setupDrawer() {
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.drawer_profile:
+                        mFragment = new ProfileFragment();
+                        break;
+                    case R.id.drawer_contacts:
+                        mFragment = new ContactsFragment();
+                        break;
+                    case R.id.drawer_team:
+                        mFragment = new TeamFragment();
+                        break;
+                    case R.id.drawer_tasks:
+                        mFragment = new TaskFragment();
+                        break;
+                    case R.id.drawer_settings:
+                        mFragment = new SettingsFragment();
+                        break;
+                }
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, mFragment).addToBackStack(null).commit();
+                mDrawerLayout.closeDrawers();
+                return false;
+            }
+        });
+    }
+
+    /*
+      метод onOptionsItemSelected - для обработки нажатий пунктов меню и  запуска layout.
+
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            mDrawerLayout.openDrawer(GravityCompat.START);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+>>>>>>> master
 
 <<<<<<< HEAD
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
 }
 
 =======
 
 }
 >>>>>>> ДЗ_4
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master

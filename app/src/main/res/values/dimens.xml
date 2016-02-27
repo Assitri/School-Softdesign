@@ -5,8 +5,14 @@
     <dimen name="view_padding">8dp</dimen>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+
+=======
+>>>>>>> ДЗ_4
+>>>>>>> master
+=======
 
 =======
 >>>>>>> ДЗ_4
@@ -26,17 +32,23 @@
 
     <dimen name="profile_icon_size">24dp</dimen>
     <dimen name="profile_text_margin">56dp</dimen>
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
     <dimen name="profile_icon_size">24dp</dimen>
     <dimen name="profile_text_margin">56dp</dimen>
+=======
+>>>>>>> master
 
 =======
 
     <dimen name="profile_icon_size">24dp</dimen>
     <dimen name="profile_text_margin">56dp</dimen>
 >>>>>>> ДЗ_4
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 
     <dimen name="toolbar_rate_size">48dp</dimen>
