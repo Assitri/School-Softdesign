@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
 =======
 >>>>>>> ДЗ_4
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,8 +17,12 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 </RelativeLayout>
 
+=======
+</RelativeLayout>
+>>>>>>> ДЗ_4
 =======
 </RelativeLayout>
 >>>>>>> ДЗ_4

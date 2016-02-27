@@ -5,7 +5,10 @@
     <dimen name="view_padding">8dp</dimen>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
 =======
 >>>>>>> ДЗ_4
     <dimen name="nav_header_height">160dp</dimen>
@@ -20,10 +23,16 @@
     <dimen name="item_avatar_size">40dp</dimen>
     <dimen name="item_text_margin">56dp</dimen>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     <dimen name="profile_icon_size">24dp</dimen>
     <dimen name="profile_text_margin">56dp</dimen>
 
+=======
+
+    <dimen name="profile_icon_size">24dp</dimen>
+    <dimen name="profile_text_margin">56dp</dimen>
+>>>>>>> ДЗ_4
 =======
 
     <dimen name="profile_icon_size">24dp</dimen>

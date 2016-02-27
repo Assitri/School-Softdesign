@@ -3,7 +3,10 @@ package com.softdesign.school.ui.fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
 =======
 >>>>>>> ДЗ_4
 import android.support.design.widget.AppBarLayout;
@@ -11,7 +14,10 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
 =======
 >>>>>>> ДЗ_4
 import android.support.design.widget.NavigationView;
@@ -28,7 +34,10 @@ import com.softdesign.school.utils.BlockToolbar;
 public class ProfileFragment extends Fragment {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
 =======
 >>>>>>> ДЗ_4
     @Nullable
@@ -56,6 +65,7 @@ public class ProfileFragment extends Fragment {
         /* кнопка с иконкой в Профиле
          */
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         params.setAnchorId(R.id.appbar_layout);
         params.anchorGravity= Gravity.RIGHT|Gravity.BOTTOM;
@@ -65,6 +75,8 @@ public class ProfileFragment extends Fragment {
         BlockToolbar.setDrag(true, appBar);
 
 =======
+=======
+>>>>>>> ДЗ_4
 
         params.setAnchorId(R.id.appbar_layout);
         params.anchorGravity= Gravity.RIGHT|Gravity.BOTTOM;
@@ -72,5 +84,8 @@ public class ProfileFragment extends Fragment {
 
         appBar.setExpanded(true);
         BlockToolbar.setDrag(true, appBar);
+<<<<<<< HEAD
+>>>>>>> ДЗ_4
+=======
 >>>>>>> ДЗ_4
     }

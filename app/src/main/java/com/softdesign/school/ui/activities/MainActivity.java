@@ -1,7 +1,10 @@
 package com.softdesign.school.ui.activities;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
 =======
 >>>>>>> ДЗ_4
 import android.os.Bundle;
@@ -15,7 +18,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
 =======
 >>>>>>> ДЗ_4
 import com.softdesign.school.R;
@@ -59,15 +65,79 @@ public class MainActivity extends AppCompatActivity {
         mNavigationView = (NavigationView) findViewById(R.id.navigation_view);
         setupDrawer();
 <<<<<<< HEAD
+<<<<<<< HEAD
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
+=======
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
 
     }
 
+    /*
+      Mетод setupToolBar -  yстанавливает Toolbar и иконку для кнопки Home.
+     */
+    private void setupToolbar() {
+        setSupportActionBar(mToolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeAsUpIndicator(R.drawable.toolbar_menu_icon);
+    }
+>>>>>>> ДЗ_4
+
+    /*
+     метод setupDrawer - чтобы меню было кликабельным и по клику на item переходило на нужный фрагмент. сравнивает id
+     пункта меню с id фрагментов, если все ок создает новый объект по ссылке mFragment и показывает нужный нам файл фрагмента.
+     */
+
+    private void setupDrawer() {
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.drawer_profile:
+                        mFragment = new ProfileFragment();
+                        break;
+                    case R.id.drawer_contacts:
+                        mFragment = new ContactsFragment();
+                        break;
+                    case R.id.drawer_team:
+                        mFragment = new TeamFragment();
+                        break;
+                    case R.id.drawer_tasks:
+                        mFragment = new TaskFragment();
+                        break;
+                    case R.id.drawer_settings:
+                        mFragment = new SettingsFragment();
+                        break;
+                }
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, mFragment).addToBackStack(null).commit();
+                mDrawerLayout.closeDrawers();
+                return false;
+            }
+        });
+    }
+
+<<<<<<< HEAD
 =======
+=======
+    /*
+      метод onOptionsItemSelected - для обработки нажатий пунктов меню и  запуска layout.
+
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            mDrawerLayout.openDrawer(GravityCompat.START);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+>>>>>>> ДЗ_4
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
 
+<<<<<<< HEAD
     }
 
 >>>>>>> ДЗ_4
@@ -132,6 +202,10 @@ public class MainActivity extends AppCompatActivity {
 
 }
 
+=======
+
+}
+>>>>>>> ДЗ_4
 =======
 
 }

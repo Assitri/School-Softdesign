@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> ДЗ_4
 =======
 >>>>>>> ДЗ_4
 <android.support.v7.widget.RecyclerView
@@ -8,8 +11,12 @@
     android:id="@+id/contacts_recyclerview"
     android:layout_width="match_parent"
 <<<<<<< HEAD
+<<<<<<< HEAD
     android:layout_height="match_parent" />
 
+=======
+    android:layout_height="match_parent" />
+>>>>>>> ДЗ_4
 =======
     android:layout_height="match_parent" />
 >>>>>>> ДЗ_4
